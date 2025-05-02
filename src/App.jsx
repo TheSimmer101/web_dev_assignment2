@@ -8,9 +8,11 @@ function App() {
   const [index, setIndex] = useState(0);
   return (
     <>
-      <div>
+      <div className = "container">
         {
-          <button>Click Me to Change the Background Color!</button>
+          <div className = "item">
+          <button >Click Me to Change the Background Color!</button>
+          </div>
         }
       </div>
       {/* <h1>Vite + React</h1>
