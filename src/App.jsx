@@ -18,11 +18,12 @@ function App() {
   
   return (
     <>
-      <div className = "container"
+      <div className = "container" //the flexbox
       style={{ backgroundColor: colorsArray[index]}}>
         {
           <div className = "item">
-            <p>{colorNames[index] + "!"}</p>
+            {/* the current color name printed out */}
+            <p>{colorNames[index] + "!"}</p> 
             <h3>The next color is: {colorNames[nextIndex]} </h3>
           <button onClick={() => setIndex((index) => {
             if (index < colorsArray.length - 1) {
